@@ -23,6 +23,7 @@ jobs:
           playwright install
           make revealjs
           cd _build/revealjs
+          ls -lah
           zip -r ../../site.zip .
           cd ../../
       - name: install nodejs for archive script
