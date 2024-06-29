@@ -34,8 +34,8 @@ Set background image
 --------------------
 
 .. revealjs-section::
-   :data-background-image: _static/icon-attakei.jpg
-   :data-background-size: contain
+   :data-background-image: _static/mirte_background.png
+
 
 .. code-block:: rst
 
