@@ -19,7 +19,7 @@ jobs:
           python3 -m venv sphinx-env
           . sphinx-env/bin/activate
           pip install -r requirements.txt
-          pip install decktape
+          npm install -g decktape
           playwright install-deps
           playwright install
           make revealjs
