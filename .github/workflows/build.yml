@@ -58,6 +58,7 @@ jobs:
           path: |
             revealjs.zip
             slides.pdf
+            slides.pptx
       - name: Upload as a github-pages artifact
         uses: actions/upload-pages-artifact@v3
         with: 
