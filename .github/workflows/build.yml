@@ -6,8 +6,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-#    container:
-#      image: althack/ros:noetic-dev
+    container:
+      image: althack/ros:humble-dev
     steps:
       - uses: actions/checkout@v3
       - name: Install dependencies
