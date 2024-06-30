@@ -36,6 +36,9 @@ jobs:
           echo '------------------'
           decktape --chrome-arg=--no-sandbox ./index.html ../../slides.pdf
           echo '------------------'
+          soffice --infilter="impress_pdf_import" --convert-to pptx:"Impress MS PowerPoint 2007 XML" slides.pdf
+          ls
+          echo '------------------'
           cd ../../
       - name: install nodejs for archive script
         run: |
