@@ -15,7 +15,7 @@ jobs:
           git config --global --add safe.directory /__w/mirte-documentation/mirte-documentation
           sudo apt update
           python3 -m pip install --upgrade pip
-          apt install python3.8-venv zip libreoffice npm -y
+          apt install python3-venv zip libreoffice npm -y
           python3 -m venv sphinx-env
           . sphinx-env/bin/activate
           pip install -r requirements.txt
