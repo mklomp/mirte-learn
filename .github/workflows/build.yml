@@ -29,6 +29,7 @@ jobs:
           cd _build/revealjs
           ls -lah
           zip -r ../../revealjs.zip .
+          npm list pupppeteer
           decktape ./index.html ../../slides.pdf
           cd ../../
       - name: install nodejs for archive script
