@@ -32,9 +32,10 @@ jobs:
           ls -lah
           zip -r ../../revealjs.zip .
           echo '------------------'
-          npm list puppeteer
+          #npm list puppeteer
           echo '------------------'
           decktape ./index.html ../../slides.pdf
+          echo '------------------'
           cd ../../
       - name: install nodejs for archive script
         run: |
