@@ -34,7 +34,7 @@ jobs:
           echo '------------------'
           #npm list puppeteer
           echo '------------------'
-          decktape ./index.html ../../slides.pdf
+          decktape --chrome-arg=--allow-file-access-from-files ./index.html ../../slides.pdf
           echo '------------------'
           cd ../../
       - name: install nodejs for archive script
