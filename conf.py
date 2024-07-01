@@ -8,14 +8,15 @@ from sphinx_revealjs.utils import get_revealjs_path
 
 # -- Project information -----------------------------------------------------
 project = "sphinx-revealjs"
-copyright = "2018, Kazuya Takei"
-author = "Kazuya Takei"
+copyright = "2024, Delft University of Technology"
+author = "Martin Klomp"
 version = ""
-release = "2018.10"
+release = ""
+footer = "&#169; " + copyright + ", CC BY-SA."
 
 # -- General configuration ---------------------------------------------------
 extensions = [
-    "atsphinx.mini18n",
+#    "atsphinx.mini18n",
     "oembedpy.ext.sphinx",
     "sphinx.ext.mathjax",
     "sphinx.ext.todo",
@@ -30,8 +31,8 @@ extensions = [
 templates_path = ["_templates"]
 source_suffix = ".rst"
 master_doc = "index"
-language = "en"
-locale_dirs = ["_locales"]
+#language = "en"
+#locale_dirs = ["_locales"]
 exclude_patterns = [".venv", "_build", "Thumbs.db", ".DS_Store", "_sections"]
 pygments_style = None
 
@@ -49,18 +50,7 @@ revealjs_script_conf = {
     "hash": True,
     "center": True,
     "transition": "slide",
-    "customcontrols": {
-        "controls": [
-            {
-                "icon": "EN",
-                "action": "location.href = '/en/';",
-            },
-            {
-                "icon": "JA",
-                "action": "location.href = '/ja/';",
-            },
-        ]
-    },
+    "previewLinks": True,
 }
 revealjs_script_plugins = [
     {
@@ -79,11 +69,18 @@ revealjs_script_plugins = [
         "name": "RevealCustomControls",
         "src": "https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/plugin.js",
     },
+#    {
+#        "name": "RevealChalkboard",
+#        "src": "https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/plugin.js",
+#    },
 ]
 revealjs_css_files = [
     "revealjs/plugin/highlight/zenburn.css",
     "https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/style.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+    "https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/style.css"
 ]
+
 revealjs_notes_from_comments = True
 
 # -- Options for extensions --------------------------------------------------
@@ -108,29 +105,20 @@ ogp_custom_meta_tags = [
     '<meta name="twitter:site" content="@attakei" />',
 ]
 
-# atsphinx-mini18n
-mini18n_default_language = "en"
-mini18n_support_languages = ["en", "ja"]
-mini18n_basepath = "/sphinx-revealjs/"
-
-
-def update_ogp(app, config):
-    print(config.ogp_site_url, config.language)
-    config.ogp_site_url = urljoin(config.ogp_site_url, f"{config.language}/")
-
-
-def _add_navigation_for_mini18n(app, config):
+def _add_custom_controls(app, config):
     config.revealjs_script_conf["customcontrols"] = {
         "controls": [
+ #           {   "icon": '<i class="fa fa-pen"></i>',
+ #               "title": 'Toggle notes canvas (C)',
+ #               "action": 'RevealChalkboard.toggleNotesCanvas();'
+ #           },
             {
-                "icon": lang.upper(),
-                "action": f"location.href = '{config.mini18n_basepath}{lang}/';",
+                "icon": footer,
+                "action": f"location.href = 'https://www.mirte.org';",
             }
-            for lang in config.mini18n_support_languages
         ]
     }
 
 
 def setup(app):
-    app.connect("config-inited", update_ogp)
-    app.connect("config-inited", _add_navigation_for_mini18n)
+    app.connect("config-inited", _add_custom_controls)
