@@ -31,7 +31,7 @@ $backgroundColor: #ebebeb;
 $linkColor: $blue;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: $magenta;
-$headingFont: 'Livvic', sans-serif;
+$headingFont: 'Livvic', bold;
 
 // Change text colors against light slide backgrounds
 @include light-bg-text-color(#222);
@@ -74,10 +74,10 @@ html * {
 }
 
 // Add background image to all slides
-.slide-background-content{
-  background-image: url("mirte_background.png");
-  background-size: 100% 100%;
-}
+// .slide-background.present{
+//   background-image: url("mirte_background.png");
+//   background-size: 100% 100%;
+// }
 #customcontrols button {
     color: $base1 !important;
 }
