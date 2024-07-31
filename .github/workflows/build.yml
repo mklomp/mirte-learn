@@ -19,7 +19,7 @@ jobs:
           python3 -m venv docs-env
           . docs-env/bin/activate
           pip install -r requirements.txt
-          playwright install
+          playwright install --with-deps
           make revealjs
           cd _build/revealjs
           zip -r ../../site.zip .
