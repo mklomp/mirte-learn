@@ -21,7 +21,7 @@ jobs:
           pip install -r requirements.txt
           playwright install
           make revealjs
-          cd _build/html
+          cd _build/revealjs
           zip -r ../../site.zip .
           cd ../../
       # - name: install nodejs for archive script
