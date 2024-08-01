@@ -56,6 +56,14 @@ html * {
       flex: 1;
       width: 50%;
     }
+    .third {
+      flex: 1;
+      width: 33.3333%;
+    }
+    .two-thirds {
+      flex: 2;
+      width: 66.6666%;
+    }
   }
   h1, h2, h3 {
     text-transform: none;
@@ -73,8 +81,8 @@ html * {
   filter: none;
 }
 
-// Add background image to all slides
-.slide-background-content{
+// // Add background image to all slides
+.slide-background.present{
   background-image: url("mirte_background.png");
   background-size: 100% 100%;
 }
