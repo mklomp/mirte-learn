@@ -27,6 +27,8 @@ extensions = [
     "sphinxcontrib.gtagjs",
     "sphinxcontrib.sass",
     "sphinxext.opengraph",
+    "sphinxcontrib.youtube",
+    "sphinxcontrib.video",
 ]
 templates_path = ["_templates"]
 source_suffix = ".rst"
