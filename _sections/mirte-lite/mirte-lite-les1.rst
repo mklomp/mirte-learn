@@ -172,21 +172,30 @@ Les 1: Kennismaken met robots
 **Robot tekenspel**
 --------------------
     
-.. list-table::
-   :widths: 50 50
-   :header-rows: 0
+.. container:: flex-container
 
-   * - **Hoe werkt het?**
-     - **Wat heb je nodig?**
-   * - - Gooi de dobbelsteen
-       - Het getal wat je gooit hoort bij een specifiek onderdeel van de robot - Gooi je 6? Dan mag je het onderdeel zelf ontwerpen
-       - Markeer het onderdeel wat je gedobbeld hebt
-       - Herhaal dit voor elke categorie van de robot
-       - Teken nu een robot met alle onderdelen die je gemarkeerd hebt
-       - Vergeet de robot niet in te kleuren!
-     - - Het werkblad voor deze opdracht (download hier)
-       - Een dobbelsteen
-       - Kleurpotloden en/of stiften
+   .. container:: half smaller50
+    
+        **Hoe werkt het?**
+        
+        #. Gooi de dobbelsteen
+        #. Het getal wat je gooit hoort bij een specifiek onderdeel van de robot - Gooi je 6? Dan mag je het onderdeel zelf ontwerpen
+        #. Markeer het onderdeel wat je gedobbeld hebt
+        #. Herhaal dit voor elke categorie van de robot
+        #. Teken nu een robot met alle onderdelen die je gemarkeerd hebt
+        #. Vergeet de robot niet in te kleuren!
+
+   .. container:: half smaller50
+
+        **Wat heb je nodig?**
+
+        - Het werkblad voor deze opdracht (download deze `hier <static/media/mirte-lite/mirte-lite-les1/Robot-tekenspel.pdf>`_)
+        - Een dobbelsteen
+        - Kleurpotloden en/of stiften
+
+.. image:: _static/media/mirte-lite/mirte-lite-les1/Robots.png
+   :width: 450px
+
 
 **Soorten robots**
 --------------------
@@ -277,20 +286,40 @@ Les 1: Kennismaken met robots
 
 **DelFly Nimble - TU Delft**
 --------------------
+.. container:: smaller80
+   
+   Een vliegende robot van de TU Delft.
 
-Een vliegende robot van de TU Delft.
+
+.. container:: flex-container
+   
+   .. container:: half
+
+      .. image:: _static/media/mirte-lite/mirte-lite-les1/DelFly-Nimble-hangend.jpg
+         :width: 450px
+    
+      .. image:: _static/media/mirte-lite/mirte-lite-les1/Delfly-flying.png
+         :width: 450px
+
+
 
 **video**
 --------------------
+.. container:: smaller50
+
+    +---------------------------+--------------------------------------+
+    | A. het is programmeerbaar | B. het kan vliegen                   |
+    +---------------------------+--------------------------------------+
+    | C. het kan praten         | D. het kan reageren op zijn omgeving |
+    +---------------------------+--------------------------------------+
+
 
 **Waarom is de DelFly Nimble een robot?**
 --------------------
 
-.. raw:: html
-
-   <div style="color: black; position: relative; left: 0px; top: 0px;">
-        <div class="smaller80">Er zijn 2 antwoorden goed.</div>
-   </div>
+.. container:: smaller80
+  
+   Er zijn 2 antwoorden goed.
 
 
 .. raw:: html
