@@ -314,6 +314,10 @@ Les 1: Kennismaken met robots
     +---------------------------+--------------------------------------+
 
 
+.. video:: URLLLLLL
+
+.. youtube:: dQw4w9WgXcQ
+
 **Waarom is de DelFly Nimble een robot?**
 --------------------
 
