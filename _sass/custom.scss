@@ -48,6 +48,14 @@ html * {
       flex: 1;
       width: 50%;
     }
+    .third {
+      flex: 1;
+      width: 33.3333%;
+    }
+    .two-thirds {
+      flex: 2;
+      width: 66.6666%;
+    }
   }
   h1, h2, h3 {
     text-transform: none;
