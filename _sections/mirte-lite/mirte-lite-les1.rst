@@ -4,14 +4,16 @@
 Les 1: Kennismaken met robots
 
 
+.. revealjs-section::
+   :data-background-image: _static/media/mirte-lite/mirte-lite-les1/MIRTE-ingekleurd-op-lijn.png
+
+
 **Wat is een robot?**
 --------------------
 
-.. raw:: html
+.. container:: smaller80
 
-   <div style="color: black; position: relative; left: 0px; top: 0px;">
-        <div class="smaller80">Een robot is een programmeerbare machine die zelfstandig een serie van taken kan uitvoeren en kan reageren op zijn omgeving.</div>
-   </div>
+   Een robot is een programmeerbare machine die zelfstandig een serie van taken kan uitvoeren en kan reageren op zijn omgeving.
 
 
 .. raw:: html
@@ -66,13 +68,27 @@ Les 1: Kennismaken met robots
 **Wel of geen robot?**
 --------------------
 
-.. raw:: html
-
-   <div style="color: black; position: relative; left: 0px; top: 0px;">
-        <div class="smaller80">Sleep de afbeeldingen naar de juiste antwoorden.</div>
-   </div>
+.. container:: smaller80
+   
+   Sleep de afbeeldingen naar de juiste antwoorden.
 
 
+.. container:: half
+      
+   .. image:: _static/media/mirte-lite/mirte-lite-les1/airfryer.jpg
+      :width: 200px
+
+   .. image:: _static/media/mirte-lite/mirte-lite-les1/wasmachine.jpg
+      :width: 200px
+
+.. container:: half
+
+   .. image:: _static/media/mirte-lite/mirte-lite-les1/pepper-zorgrobot.jpg
+      :width: 200px
+
+   .. image:: _static/media/mirte-lite/mirte-lite-les1/industrial-robotic-arm.jpg
+      :width: 200px
+    
 **Waar bestaat een robot uit?**
 --------------------
 
@@ -189,12 +205,12 @@ Les 1: Kennismaken met robots
 
         **Wat heb je nodig?**
 
-        - Het werkblad voor deze opdracht (download deze `hier <static/media/mirte-lite/mirte-lite-les1/Robot-tekenspel.pdf>`_)
+        - Het werkblad voor deze opdracht (download deze `hier <_static/media/mirte-lite/mirte-lite-les1/Robot-tekenspel.pdf>`_)
         - Een dobbelsteen
         - Kleurpotloden en/of stiften
 
-.. image:: _static/media/mirte-lite/mirte-lite-les1/Robots.png
-   :width: 450px
+        .. image:: _static/media/mirte-lite/mirte-lite-les1/Robots.png
+           :width: 450px
 
 
 **Soorten robots**
@@ -288,8 +304,7 @@ Les 1: Kennismaken met robots
 --------------------
 .. container:: smaller80
    
-   Een vliegende robot van de TU Delft.
-
+   Een vliegende robot van de TU Delft
 
 .. container:: flex-container
    
@@ -297,26 +312,22 @@ Les 1: Kennismaken met robots
 
       .. image:: _static/media/mirte-lite/mirte-lite-les1/DelFly-Nimble-hangend.jpg
          :width: 450px
-    
-      .. image:: _static/media/mirte-lite/mirte-lite-les1/Delfly-flying.png
-         :width: 450px
 
 
+   .. container:: half smaller50
 
-**video**
+        Bekijk de video in de volgende slide en beantwoord deze twee vragen:
+
+        #. Waarom is de DelFly Nimble een robot?
+        #. Welke onderdelen heeft de DelFly Nimble?
+
+
+**DelFly Nimble - TU Delft** 
 --------------------
-.. container:: smaller50
+.. raw:: html
 
-    +---------------------------+--------------------------------------+
-    | A. het is programmeerbaar | B. het kan vliegen                   |
-    +---------------------------+--------------------------------------+
-    | C. het kan praten         | D. het kan reageren op zijn omgeving |
-    +---------------------------+--------------------------------------+
+   <iframe src="https://player.ntr.nl/index.php?id=WO_NTR_16906653" width="600" height="338" frameborder="0" allow="encrypted-media; geolocation" allowfullscreen=""></iframe>
 
-
-.. video:: URLLLLLL
-
-.. youtube:: dQw4w9WgXcQ
 
 **Waarom is de DelFly Nimble een robot?**
 --------------------
@@ -326,74 +337,24 @@ Les 1: Kennismaken met robots
    Er zijn 2 antwoorden goed.
 
 
-.. raw:: html
+   .. raw:: html
 
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <style>
+      <div class="grid-container">
+        <button class="button1">A. het is programmeerbaar</button>
+        <button class="button2">B. het kan vliegen</button>
+        <button class="button2">C. het kan praten</button>
+        <button class="button1">D. het kan reageren op zijn omgeving</button>
+      </div>
 
-    .column {
-    flex: 1;
-    padding: 10px;
-    }
+      <script>
+        document.querySelectorAll('.button').forEach(button => {
+            button.addEventListener('click', function() {
+            console.log("adfg")
+                this.classList.toggle('.pressed');
+            });
+        });
+      </script>
 
-    .row {
-    display: flex;
-    justify-content: center;
-    }
-    </style>
-    </head>
-    <body>
-
-    <div class="row">
-    <div class="column">
-    <div class="smaller70">A. het is programmeerbaar</div>
-    <div style="clear: both;"></div>
-    
-    </div>
-
-    <div class="row">
-    <div class="column">
-    <div class="smaller70">B. het kan vliegen</div>
-    <div style="clear: both;"></div>
-    
-    </div>
-
-    </body>
-
-    <head>
-    <style>
-
-    .column {
-    flex: 1;
-    padding: 10px;
-    }
-
-    .row {
-    display: flex;
-    justify-content: center;
-    }
-    </style>
-    </head>
-    <body>
-
-    <div class="row">
-    <div class="column">
-    <div class="smaller70">C. het kan praten</div>
-    <div style="clear: both;"></div>
-
-
-    </div>
-
-    <div class="column">
-    <div class="smaller70">D. het kan reageren op zijn omgeving</div>
-    <div style="clear: both;"></div>
-
-    </div>
-
-    </body>
-    </html>
 
 **Welke onderdelen heeft de DelFly Nimble?**
 --------------------
@@ -403,92 +364,46 @@ Sleep alle goede antwoorden (5) naar de DelFly.
 **Zwermrobots - TU Delft**
 --------------------
 
-Bekijk de video in de volgende slide en beantwoord deze twee vragen:
+.. container:: flex-container
+   
+   .. container:: half
 
-1. Waar kunnen de zwermrobots voor gebruikt worden?
-2. Op welke beestjes lijken de zwermrobots?
+      .. image:: _static/media/mirte-lite/mirte-lite-les1/zwermrobots.jpg
+         :width: 450px
 
-**video2**
+
+   .. container:: half smaller50
+
+        Bekijk de video in de volgende slide en beantwoord deze twee vragen:
+
+        #. Waar kunnen de zwermrobots voor gebruikt worden?
+        #. Op welke beestjes lijken de zwermrobots?
+
+
+**Zwermrobots - TU Delft** 
 --------------------
+.. raw:: html
+
+   <iframe src="https://player.ntr.nl/index.php?id=WO_NTR_16906654" width="600" height="338" frameborder="0" allow="encrypted-media; geolocation" allowfullscreen=""></iframe>
+
 
 **Waar kunnen de zwermrobots voor gebruikt worden?**
 --------------------
 
-.. raw:: html
-
-   <div style="color: black; position: relative; left: 0px; top: 0px;">
-        <div class="smaller80">Er is 1 antwoord goed.</div>
-   </div>
+.. container:: smaller80
+  
+   Er is 1 antwoord goed.
 
 
-.. raw:: html
+   .. raw:: html
 
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <style>
+      <div class="grid-container">
+        <button class="button2">A. gras besproeien</button>
+        <button class="button2">B. de weg wijzen</button>
+        <button class="button1">C. slachtoffers vinden na een aardbeving</button>
+        <button class="button2">D. toezicht houden met een camera</button>
+      </div>
 
-    .column {
-    flex: 1;
-    padding: 10px;
-    }
-
-    .row {
-    display: flex;
-    justify-content: center;
-    }
-    </style>
-    </head>
-    <body>
-
-    <div class="row">
-    <div class="column">
-    <div class="smaller70">A. gras besproeien</div>
-    <div style="clear: both;"></div>
-    
-    </div>
-
-    <div class="row">
-    <div class="column">
-    <div class="smaller70">B. de weg wijzen</div>
-    <div style="clear: both;"></div>
-    
-    </div>
-
-    </body>
-
-    <head>
-    <style>
-
-    .column {
-    flex: 1;
-    padding: 10px;
-    }
-
-    .row {
-    display: flex;
-    justify-content: center;
-    }
-    </style>
-    </head>
-    <body>
-
-    <div class="row">
-    <div class="column">
-    <div class="smaller70">C. slachtoffers vinden na een aardbeving</div>
-    <div style="clear: both;"></div>
-
-
-    </div>
-
-    <div class="column">
-    <div class="smaller70">D. toezichthouden met een camera</div>
-    <div style="clear: both;"></div>
-
-    </div>
-
-    </body>
-    </html>
 
 **Op welke beestjes lijken de zwermrobots?**
 --------------------
@@ -515,13 +430,4 @@ Goed gedaan! Je hebt de eerste les afgerond. Klik hier om door te gaan naar les 
 
 
 
-**Test pagina**
---------------------
-
-.. raw:: html
-
-    <div class="square" style="width: 100px; height: 100px; border: 10px solid black;"></div>
-    <div style="color: black;transform: rotate(20deg); position: relative; ;left: 100px; top: 100px;">
-        Rotated text
-    </div>
 
